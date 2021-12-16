@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_crypto_tracker/models/crypto.dart';
 import 'package:flutter_crypto_tracker/pages/home_page.dart';
+import 'package:flutter_crypto_tracker/providers/market_provider.dart';
+import 'package:provider/provider.dart';
 
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -11,9 +14,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "Crypto Tracker",
-      home: HomePage(),
+    return MultiProvider(providers: [
+      ChangeNotifierProvider<MarketProvider>(create: (context) => MarketProvider())
+    ],
+      child: const MaterialApp(
+        title: "Crypto Tracker",
+        home: HomePage(),
+      )
     );
   }
 }
