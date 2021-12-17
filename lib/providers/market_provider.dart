@@ -15,7 +15,7 @@ class MarketProvider extends ChangeNotifier{
     getData();
   }
 
-  void getData() async{
+  Future<void> getData() async{
     List<dynamic> _markets = await API.getMarkets();
 
     List<CryptoModel> temp = [];
@@ -27,8 +27,14 @@ class MarketProvider extends ChangeNotifier{
     isLoading = false;
     notifyListeners();
 
-    Timer(const Duration(seconds: 4), (){
-      getData();
-    });
+    // Timer(const Duration(seconds: 2), (){
+    //   getData();
+    // });
+
   }
+   CryptoModel fetchCryptoById(String id){
+    CryptoModel crypto = markets.where((element) => element.id == id).toList()[0];
+    return crypto;
+   }
+
 }
