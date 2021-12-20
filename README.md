@@ -1,6 +1,6 @@
 # flutter_crypto_tracker
 
-Flutter App with coingecko API and Provider State Management.
+Flutter App with [Coingecko API](https://www.coingecko.com/en/api/documentation?) and Provider State Management.
 
 Screenshots:
 <br>
