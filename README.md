@@ -1,16 +1,12 @@
 # flutter_crypto_tracker
 
-A new Flutter project.
+Flutter App with coingecko API and Provider State Management.
 
-## Getting Started
+Screenshots:
+<br>
+<img src="https://user-images.githubusercontent.com/81079724/146762777-c814c03e-fe54-4a87-882d-b9d297491735.jpeg" width="340" height="620">
+<img src="https://user-images.githubusercontent.com/81079724/146762789-315225be-7dd4-4b0e-b906-e46eecd6d853.jpeg" width="340" height="620">
+<img src="https://user-images.githubusercontent.com/81079724/146762780-1449bf43-5fbb-466b-bf2f-cced3fbe49d8.jpeg" width="340" height="620">
+<img src="https://user-images.githubusercontent.com/81079724/146764476-9d626b20-e7df-4afb-bc9b-070d17ce2b05.jpeg" width="340" height="620">
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
